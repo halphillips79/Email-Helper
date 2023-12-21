@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Page</title>
+</head>
+<body>
+    <h1>Button Page</h1>
+    <form method="POST" action="{% url 'button_click' %}">
+        {% csrf_token %}
+        <button type="submit">Click Me!</button>
+    </form>
+</body>
+</html>
